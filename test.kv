@@ -1,0 +1,39 @@
+TextWidget:
+
+<TextWidget>:
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.size
+
+        Label:
+            size_hint_y: 0.7
+            id: label1
+            font_size: 68
+            text: root.text
+            color: root.color
+
+        BoxLayout:
+            size_hint_y: 0.3
+            Button:
+                id: button1
+                text: "morning"
+                font_size: 68
+                on_press: root.buttonClicked()
+
+            Button:
+                id: button2
+                text: "day"
+                font_size: 68
+                on_press: root.buttonClicked2()
+
+            Button:
+                id: button3
+                text: "night"
+                font_size: 68
+                on_press: root.buttonClicked3()
+
+            ToggleButton:
+                id: button4
+                text: "toggle"
+                font_size: 68
+                on_press: root.buttonClicked3()
